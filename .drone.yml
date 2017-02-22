@@ -7,5 +7,11 @@ build:
                 image: python:2-alpine
                 commands:
                         - pip install -r requirements.txt
-                        - python testing.py
+                        - python testing.psh:
+    docker:
+        repo: tkamata/cicd_demoapp
+        tag: latest
+        username: tkamata
+        password: TK83425kt
+        email: teppei.kamata@gmail.com
 
