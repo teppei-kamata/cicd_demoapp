@@ -8,10 +8,10 @@ build:
                 commands:
                         - pip install -r requirements.txt
                         - python testing.psh:
+publish:
     docker:
-        repo: tkamata/cicd_demoapp
+        repo: $$DOCKER_USERNAME/cicd_demoapp
         tag: latest
-        username: tkamata
-        password: TK83425kt
-        email: teppei.kamata@gmail.com
-
+        username: $$DOCKER_USERNAME
+        password: $$DOCKER_PASSWORD
+        email: $$DOCKER_EMAIL 
